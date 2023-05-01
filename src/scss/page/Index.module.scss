@@ -1,0 +1,6 @@
+@use "../foundation/mixin" as mixin;
+
+.index {
+  height: 100dvh;
+  background: url("./src/assets/image-bg.png") center / cover no-repeat;
+}

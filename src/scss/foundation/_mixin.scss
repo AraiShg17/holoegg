@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+//breakPoint
+$breakpoint: 768px;
+
+@mixin lg() {
+  @media (width >= #{$breakpoint}) {
+    @content;
+  }
+}
+
+@mixin sm() {
+  @media (width < #{$breakpoint}) {
+    @content;
+  }
+}
+
+// アニメーションやスクロールなどの動きを減らす設定をしていない時のみ
+@mixin motion() {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}
