@@ -11,7 +11,7 @@ const Hungry: React.FC<Types> = ({ value, ...arg }) => {
       className={styles.hungry}
       {...arg}
       data-value={value}
-      style={{ backgroundPositionY: value * 3.4 + "px" }}
+      style={{ backgroundPositionY: value * -3.4 + "px" }}
     ></div>
   );
 };

@@ -1,0 +1,78 @@
+.menu {
+  position: fixed;
+  inset: auto 0 0;
+
+  &__unit {
+    display: flex;
+    height: 64px;
+    background: linear-gradient(
+      145deg,
+      rgba(#fff, 1) 0%,
+      rgba(#efefef, 1) 100%
+    );
+
+    &__list {
+      &__button {
+        width: 64px;
+        aspect-ratio: 1/1;
+        background: left top / contain no-repeat;
+        &[aria-label="stats"] {
+          background-image: url("./src/assets/menu-stats.svg");
+        }
+        &[aria-label="act"] {
+          background-image: url("./src/assets/menu-act.svg");
+        }
+      }
+    }
+  }
+
+  &__subUnit {
+    position: absolute;
+    z-index: 1;
+    inset: auto 16px calc(100% + 18px);
+    background: #fff;
+    padding: 16px 8px 8px;
+    border-radius: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    &__list {
+      padding: 0 14px;
+      &__button {
+        width: 40px;
+        aspect-ratio: 1/1;
+        background: center / contain no-repeat;
+        &[aria-label="game"] {
+          background-image: url("./src/assets/menu-sub-game.svg");
+        }
+        &[aria-label="bath"] {
+          background-image: url("./src/assets/menu-sub-bath.svg");
+        }
+        &[aria-label="cleaning"] {
+          background-image: url("./src/assets/menu-sub-cleaning.svg");
+        }
+        &[aria-label="lunch"] {
+          background-image: url("./src/assets/menu-sub-lunch.svg");
+        }
+        &[aria-label="sleep"] {
+          background-image: url("./src/assets/menu-sub-sleep.svg");
+        }
+        &[aria-label="sound"] {
+          background-image: url("./src/assets/menu-sub-sound.svg");
+        }
+        &[aria-label="sports"] {
+          background-image: url("./src/assets/menu-sub-sports.svg");
+        }
+      }
+    }
+  }
+
+  &__live {
+    width: 160px;
+    aspect-ratio: 1/1;
+    background: url("./src/assets/menu-live.svg") right bottom / contain
+      no-repeat;
+    position: fixed;
+    inset: auto 0 0 auto;
+  }
+}

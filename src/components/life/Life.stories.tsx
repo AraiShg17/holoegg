@@ -2,7 +2,7 @@ import { Story, Meta } from "@storybook/react";
 import Life, { Types } from "./Life";
 
 export default {
-  title: "Components/Life",
+  title: "Components/Menu",
   component: Life,
   argTypes: {
     value: {

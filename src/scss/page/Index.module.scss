@@ -3,4 +3,58 @@
 .index {
   height: 100dvh;
   background: url("./src/assets/image-bg.png") center / cover no-repeat;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 8px;
+    &__time {
+      font-size: 38px;
+      font-weight: bold;
+      color: #559ed2;
+      line-height: 1;
+    }
+    &__bar {
+      display: flex;
+      align-items: flex-end;
+      &__hungry {
+        margin-right: 8px;
+      }
+      &__life {
+      }
+    }
+  }
+
+  &__main {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    pointer-events: none;
+    animation: egg_rotate 3s linear infinite;
+    transform-origin: center bottom;
+  }
+}
+
+@keyframes egg_rotate {
+  0% {
+    rotate: 0deg;
+  }
+  10% {
+    rotate: -5deg;
+  }
+  20% {
+    rotate: 5deg;
+  }
+  30% {
+    rotate: -5deg;
+  }
+  40% {
+    rotate: 5deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }

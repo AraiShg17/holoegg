@@ -32,6 +32,12 @@ textarea,
 select {
   font-family: inherit;
   font-weight: inherit;
+  appearance: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 img {

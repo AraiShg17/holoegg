@@ -2,9 +2,8 @@
   width: 26px;
   aspect-ratio: 13/17;
 
-  background: linear-gradient(0deg, #ffa012, #ffa012) 0 top / auto 100%
-      no-repeat,
-    #666;
+  background: linear-gradient(0deg, #666, #666) 0 top / auto 100% no-repeat,
+    #ffa012;
   transition: background-position 0.4s ease;
 
   clip-path: path(
